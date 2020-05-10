@@ -1,0 +1,98 @@
+{
+  "name": "metalsmith-gulp-tailwindcss-static-site-template",
+  "version": "1.0.0",
+  "description": "Metalsmith, Gulp and Tailwindcss static site generator. Based on https://github.com/manjumjn/gulp-with-tailwindcss",
+  "main": "gulpfile.js",
+  "scripts": {
+    "dev": "default",
+    "build": "production"
+  },
+  "options": {
+    "config": {
+      "tailwindjs": "./tailwind.config.js"
+    },
+    "paths": {
+      "root": "./",
+      "src": {
+        "base": "./src",
+        "css": "./src/css",
+        "js": "./src/js",
+        "img": "./src/img",
+        "assets": "./src/assets",
+        "metalsmith": {
+          "root": "./src/site",
+          "partials": "./src/site/partials",
+          "layouts": "./src/site/layouts",
+          "pages": "./src/site/pages",
+          "collections": "./src/site/collections"
+        }
+      },
+      "dist": {
+        "base": "./dist",
+        "css": "./dist/css",
+        "js": "./dist/js",
+        "img": "./dist/img"
+      }
+    }
+  },
+  "keywords": [
+    "gulp",
+    "tailwind",
+    "tailwindcss",
+    "metalsmith",
+    "gulpsmith",
+    "static"
+  ],
+    "author": {
+        "name" : "Kevin Andrews", 
+        "url" : "https://github.com/nForced-uk/metalsmith-tailwindcss"
+    },
+    "contributors": { 
+        "name" : "Manjunath G",
+        "url" : "https://github.com/manjumjn/gulp-with-tailwindcss"
+    },
+  "license": "ISC",
+  "homepage": "https://github.com/nForced-uk/metalsmith-tailwindcss",
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-purgecss": "^2.1.2",
+    "gulp-purify-css": "^0.1.0",
+    "gulp-purifycss": "^0.2.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^4.0.1",
+    "log-symbols": "^4.0.0",
+    "purifycss-extended": "^1.3.6",
+    "tailwindcss": "^1.4.1"
+  },
+  "dependencies": {
+    "gulp-front-matter": "^1.3.0",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-metalsmith": "^1.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulpsmith": "^0.6.0",
+    "jstransformer-handlebars": "^1.1.0",
+    "lodash.assign": "^4.2.0",
+    "lodash.merge": "^4.6.2",
+    "metalsmith": "^2.3.0",
+    "metalsmith-collections": "^0.9.0",
+    "metalsmith-discover-helpers": "^0.1.1",
+    "metalsmith-discover-partials": "^0.1.2",
+    "metalsmith-filenames": "^1.0.0",
+    "metalsmith-handlebars": "^1.1.0",
+    "metalsmith-layouts": "^2.3.1",
+    "metalsmith-mapsite": "^1.0.6",
+    "metalsmith-permalinks": "^2.2.0",
+    "metalsmith-rename": "^1.0.0",
+    "metalsmith-twig": "^1.4.0"
+  }
+}

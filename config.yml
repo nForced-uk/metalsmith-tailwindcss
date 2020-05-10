@@ -1,0 +1,25 @@
+## YAML Template.
+---
+metalsmith:
+    # See https://www.npmjs.com/package/metalsmith-mapsite
+    sitemap:
+        hostname: https://test.com
+        omitExtension: false
+        omitIndex: fasle
+    
+    metadata:
+        site:
+            name: Metalsmith Static Site Generator
+            title: test.com
+            url: https://test.com
+    collections:
+        blog:
+            sortBy: 'date'
+            reverse: true
+    permalinks:
+        pattern: ':url'
+        linksets:
+            - match:
+                collection: blog
+              pattern: 'blog/:year/:month/:title'
+            
